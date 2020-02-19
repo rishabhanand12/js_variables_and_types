@@ -6,13 +6,7 @@
  * [ ] Write a function called calculateTax which takes an argument 'amount' and calculates the tax you need to pay.
  * [ ] Write a function named formatAmount which returns you amount in this format '$ 132.45' make the decimal fixed to 2 places.
 ```js
-const SPENDING_THRESHOLD = 200;
-const TAX_RATE = 0.08;
-const PHONE_PRICE = 99.99;
-const ACCESSORY_PRICE = 9.99;
 
-var bank_balance = 303.91;
-var amount = 0;
 const SPENDING_THRESHOLD = 200;
 const TAX_RATE = 0.08;
 const PHONE_PRICE = 99.99;
@@ -37,7 +31,7 @@ function formatAmount(Amount)
 
 while(bank_balance>0)
 {
-    if(amount < SPENDING_THRESHOLD)
+    if(PHONE_PRICE < SPENDING_THRESHOLD)
     {
         unit_price = PHONE_PRICE + ACCESSORY_PRICE;
         unit_price += calculateTax(unit_price); 
@@ -47,10 +41,10 @@ while(bank_balance>0)
         unit_price += calculateTax(unit_price); 
     }
    
-formatAmount(unit_price);
-bank_balance= bank_balance-unit_price;
-amount+=unit_price;
-unit_price=0;
+    formatAmount(unit_price);
+    bank_balance= bank_balance-unit_price;
+    amount+=unit_price;
+    unit_price=0;
 }
 
 if(amount>bank_balance)
@@ -109,18 +103,19 @@ for(var i=1;i<11;i++)
 
  //Your code goes here
 ```
+var str="";
 for (var i=1;i<11;i++)
 {
-    var str;
     if(i==5)
     {
         str+= i + "," + "\n" ;
     }
-    if(i!=10)
+    else if(i==10)
     {
-        str+= i + ",";
+        str+= i;
     }
-    
+    else if(i!=5&&i!=10)
+    str+= i + ",";
 }
 alert(str);
 
