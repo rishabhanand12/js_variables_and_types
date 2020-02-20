@@ -101,43 +101,43 @@ var number=Number(prompt("Enter a number"));
 switch(number)
 {
   case 1:
-  alert(1);
+  alert("ONE");
   break;
 
   case 2:
-  alert(2);
+  alert("TWO");
   break;
 
   
   case 3:
-  alert(3);
+  alert("THREE");
   break;
   
   case 4:
-  alert(4);
+  alert("FOUR");
   break;
 
   case 5:
-  alert(5);
+  alert("FIVE");
   break;
 
   case 6:
-  alert(6);
+  alert("SIX");
   break;
 
 
   case 7:
-  alert(7);
+  alert("SEVEN");
   break;
 
 
   case 8:
-  alert(8);
+  alert("EIGHT");
   break;
 
 
   case 9:
-  alert(9);
+  alert("NINE");
   break;
 
   default:

@@ -128,6 +128,7 @@ var sum = 0;
 while(i<21)
 {
     sum += i; 
+    i++;
 }
 alert(sum);
 
